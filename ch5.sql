@@ -18,10 +18,9 @@ where table_schema = 'cook_book';
 
 
 # 테이블의 열 나열하기
-select column_name, data_type, ORDINAL_POSITION
+select column_name, data_type
 from information_schema.columns
-where table_schema = 'cook_book' and table_name = 'emp'
-order by 3;
+where table_schema = 'blog_platform' and table_name = 'blog_category';
 
 # 테이블의 인덱싱된 열 나열하기
 # 특정 테이블의 인덱스에서 인덱스 색인, 해당 열 및 열 위치(가능한 경우)를 나열하려고 합니다.
